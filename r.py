@@ -1,6 +1,11 @@
 import random
 
-r = random.randint(1, 100)
+start = input('請輸入您的數字範圍起始值:')
+end = input('請輸入您的數字範圍結束值:')
+start = int(start)
+end = int(end)
+
+r = random.randint(start, end)
 count = 0 
 while True:
 	count += 1
@@ -12,6 +17,6 @@ while True:
 		print('再猜一次 數字大點')
 	else:
 		print('BINGO')
-		print('這是你的第', count, '次')
+		print('這是你猜的第', count, '次')
 		break
-	print('這是你的第', count, '次')
+	print('這是你猜的第', count, '次')
